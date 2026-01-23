@@ -1,59 +1,194 @@
-# RchIdSimpleGuide
+# RCH ID Simple Guide
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.5.
+**A Public Interest Initiative for Pregnant Women in Tamil Nadu**
 
-## Development server
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-To start a local development server, run:
+## 🎯 Purpose
 
-```bash
-ng serve
+This is a **community-driven, informational web application** designed to help first-time pregnant women and their families understand the **RCH ID (Reproductive and Child Health ID)** registration process at Government Hospitals in Tamil Nadu.
+
+### Why This App?
+
+Many families face confusion and anxiety when visiting Government Hospitals for the first time. This app aims to:
+
+- ✅ **Reduce Anxiety** by explaining the hospital process step-by-step
+- ✅ **Prevent Repeat Visits** by clarifying document requirements upfront
+- ✅ **Save Time** by preparing families with realistic expectations
+- ✅ **Support Multiple Languages** (Tamil & English) for wider accessibility
+
+> **Important**: This app is purely informational. It does **NOT** generate RCH IDs, collect personal data, or replace official government systems.
+
+---
+
+## 🚀 Features
+
+### Core Features
+- 🌐 **Bilingual Support**: Instant toggle between Tamil and English
+- 📋 **Document Checklist**: Clear list of required documents (Aadhaar, IPPB Card, E-Shram Card, etc.)
+- 🏥 **Hospital Flow Guide**: Step-by-step walkthrough of what happens inside the hospital
+- ❓ **FAQ Section**: Answers to common questions about Marriage Certificates, waiting times, etc.
+- 📱 **Mobile-First Design**: Optimized for smartphone access
+- 🔒 **Privacy-First**: No login, no forms, no data collection
+- ⚡ **Offline-Capable**: Static content that loads fast even on slow networks
+
+### Technical Features
+- Modern, accessible UI following latest design trends
+- Smooth animations and transitions
+- Touch-friendly buttons (64px minimum height)
+- Responsive layout (max-width: 420px for mobile simulation)
+- Government-friendly professional design
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| **Angular** (Latest) | Frontend Framework |
+| **TypeScript** | Type-safe development |
+| **Vanilla CSS** | Custom styling with CSS variables |
+| **Google Fonts** | Mukta Malar (Tamil) + Roboto |
+| **Static Hosting** | GitHub Pages / Netlify / Vercel compatible |
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm (v9 or higher)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/rch-id-simple-guide.git
+   cd rch-id-simple-guide
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run locally**
+   ```bash
+   npm start
+   ```
+   Navigate to `http://localhost:4200/`
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+   Output will be in `dist/` directory
+
+---
+
+## 📱 User Journey
+
+```
+Landing Page (Language Selection)
+    ↓
+What is RCH ID? (Explanation)
+    ↓
+Preparation (Document Checklist)
+    ↓
+Hospital Flow (Step-by-Step Guide)
+    ↓
+FAQ (Common Questions)
+    ↓
+Disclaimer (Legal Notice)
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🤝 Contributing
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+This is a **public interest project** and we welcome contributions from:
 
-```bash
-ng generate component component-name
-```
+- Healthcare professionals
+- Government employees
+- Social workers (ASHA, ANM)
+- Developers
+- Translators
+- UX designers
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### How to Contribute
 
-```bash
-ng generate --help
-```
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -m 'Add helpful feature'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Open a Pull Request
 
-## Building
+### Areas for Contribution
+- [ ] Add more regional languages (Hindi, Telugu, Kannada, etc.)
+- [ ] Improve Tamil translations
+- [ ] Add district-specific variations
+- [ ] Create printable PDF guides
+- [ ] Add voice-over support for accessibility
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🏛️ Government Collaboration
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This project is **open for collaboration** with:
 
-## Running unit tests
+- Department of Public Health, Tamil Nadu
+- National Health Mission (NHM)
+- Primary Health Centers (PHCs)
+- Urban Primary Health Centers (UPHCs)
+- ASHA Workers and ANMs
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+If you're a government official interested in adopting or improving this tool, please reach out via Issues or email.
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## ⚠️ Disclaimer
 
-For end-to-end (e2e) testing, run:
+**PLEASE READ CAREFULLY**
 
-```bash
-ng e2e
-```
+1. **No Government Affiliation**: This app is NOT an official platform of the Government of Tamil Nadu or Government of India.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+2. **Informational Use Only**: Content is based on user experiences and may vary by district.
 
-## Additional Resources
+3. **No Data Collection**: This app does NOT collect, store, or transmit any personal data.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+4. **No Service Delivery**: This app CANNOT generate RCH IDs. Users must visit their PHC/Hospital for official registration.
+
+5. **Accuracy**: While we strive for accuracy, government procedures may change. Always verify with official sources.
+
+For full disclaimer, see [DISCLAIMER.md](DISCLAIMER.md)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+**Why MIT?**
+- Allows government adoption without restrictions
+- Enables commercial use for CSR initiatives
+- Permits modifications and redistribution
+- Requires attribution only
+
+---
+
+## 📞 Contact & Support
+
+- **Issues**: [GitHub Issues](https://github.com/your-username/rch-id-simple-guide/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/your-username/rch-id-simple-guide/discussions)
+
+---
+
+## 🙏 Acknowledgments
+
+- Inspired by real-life experiences of families navigating the RCH ID process
+- Built with the goal of reducing healthcare access barriers
+- Dedicated to all ASHA workers, ANMs, and healthcare professionals who serve communities daily
+
+---
+
+**Made with ❤️ for Public Health in India**

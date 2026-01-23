@@ -1,0 +1,21 @@
+<div class="page-container">
+  <div class="scroll-content">
+    <h2 class="page-title">{{ content.title }}</h2>
+
+    <div class="card checklist-card">
+      <app-checklist-item *ngFor="let item of content.checklist" [text]="item"></app-checklist-item>
+    </div>
+
+    <div class="tip-card">
+      <p>{{ content.tips }}</p>
+    </div>
+
+    <div class="contact-note">
+      <p>{{ content.contactNote }}</p>
+    </div>
+  </div>
+
+  <div class="footer-action">
+    <app-primary-button route="/hospital-flow" [label]="content.next"></app-primary-button>
+  </div>
+</div>

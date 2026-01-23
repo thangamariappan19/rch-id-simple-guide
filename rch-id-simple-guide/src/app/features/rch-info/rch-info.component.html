@@ -1,0 +1,11 @@
+<div class="page-container">
+    <div class="scroll-content">
+        <h2 class="page-title">{{ content.title }}</h2>
+        <div class="info-card">
+            <p class="info-text">{{ content.content }}</p>
+        </div>
+    </div>
+    <div class="footer-action">
+        <app-primary-button route="/preparation" [label]="content.next"></app-primary-button>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="page-container">
+    <div class="scroll-content">
+        <div class="alert-icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#D32F2F" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+        </div>
+
+        <h2 class="page-title">{{ content.title }}</h2>
+
+        <div class="disclaimer-text">
+            <p>{{ content.content }}</p>
+        </div>
+    </div>
+
+    <div class="footer-action">
+        <app-primary-button route="/" [label]="content.home"></app-primary-button>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="page-container">
+    <div class="scroll-content">
+        <h2 class="page-title">{{ content.title }}</h2>
+
+        <div class="flow-list">
+            <app-step-card *ngFor="let step of content.steps; let i = index" [stepNumber]="i + 1" [title]="step.title"
+                [description]="step.description">
+            </app-step-card>
+        </div>
+
+        <div class="note-card">
+            <p>{{ content.note }}</p>
+        </div>
+    </div>
+
+    <div class="footer-action">
+        <app-primary-button route="/faq" [label]="content.next"></app-primary-button>
+    </div>
+</div>

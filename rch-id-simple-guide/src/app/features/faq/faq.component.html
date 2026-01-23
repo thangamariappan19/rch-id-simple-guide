@@ -1,0 +1,11 @@
+<div class="page-container">
+    <div class="scroll-content">
+        <h2 class="page-title">{{ content.title }}</h2>
+
+        <app-accordion [items]="content.items"></app-accordion>
+    </div>
+
+    <div class="footer-action">
+        <app-primary-button route="/disclaimer" [label]="content.next"></app-primary-button>
+    </div>
+</div>

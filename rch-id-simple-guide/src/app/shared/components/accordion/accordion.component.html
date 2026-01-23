@@ -1,0 +1,20 @@
+<div class="accordion">
+    <div *ngFor="let item of items; let i = index" class="accordion-item">
+        <button class="accordion-header" (click)="toggle(i)" [class.expanded]="expandedIndex() === i">
+            <span class="question">{{ item.question }}</span>
+            <span class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"
+                    [style.transform]="expandedIndex() === i ? 'rotate(180deg)' : 'rotate(0deg)'"
+                    style="transition: transform 0.3s">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </span>
+        </button>
+        <div class="accordion-content" [class.open]="expandedIndex() === i">
+            <div class="content-inner">
+                <p>{{ item.answer }}</p>
+            </div>
+        </div>
+    </div>
+</div>
