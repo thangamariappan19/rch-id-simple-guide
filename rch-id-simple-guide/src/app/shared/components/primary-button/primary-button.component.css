@@ -11,7 +11,7 @@
     background: linear-gradient(135deg, #2E7D32 0%, #388E3C 100%);
 
     /* Text styling */
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 0.2px;
