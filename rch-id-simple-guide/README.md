@@ -78,11 +78,24 @@ Many families face confusion and anxiety when visiting Government Hospitals for 
    ```
    Navigate to `http://localhost:4200/`
 
-4. **Build for production**
+### Build for production
    ```bash
    npm run build
    ```
-   Output will be in `dist/` directory
+   Output will be in `dist/rch-id-simple-guide/browser` directory.
+
+---
+
+## ☁️ Vercel Deployment
+
+For successful deployment on Vercel, use these settings:
+
+- **Framework Preset**: `Angular`
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist/rch-id-simple-guide/browser`
+- **Install Command**: `npm install`
+
+The included `vercel.json` ensures that all routes redirect to `index.html` for a smooth Single Page Application (SPA) experience.
 
 ---
 
