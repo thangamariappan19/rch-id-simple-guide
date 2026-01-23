@@ -12,7 +12,12 @@
         <h1 class="page-title">{{ content.title }}</h1>
 
         <div class="disclaimer-text">
-            <p>{{ content.content }}</p>
+            <p>{{ content.text1 }}</p>
+            <p class="link-paragraph">
+                {{ content.officialLabel }}
+                <a href="https://picme3.tn.gov.in" target="_blank" class="official-link">{{ content.officialUrl }}</a>
+            </p>
+            <p>{{ content.text2 }}</p>
         </div>
     </div>
 

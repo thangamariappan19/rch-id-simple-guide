@@ -25,7 +25,8 @@ export const TRANSLATIONS = {
         'Latest Scan & Vaccination Reports'
       ],
       tips: '💡 Benefits: Registered women are monitored by a Village Health Nurse (VHN) and receive SMS alerts for scan dates and vaccinations.',
-      contactNote: 'Official Site: picme3.tn.gov.in',
+      contactNote: 'Official Site: ',
+      officialUrl: 'picme3.tn.gov.in',
       next: 'Next: Registration Process'
     },
     hospitalFlow: {
@@ -53,7 +54,10 @@ export const TRANSLATIONS = {
     },
     disclaimer: {
       title: 'Guide Disclaimer',
-      content: 'This app is a public-interest guide maintained for education. \n\nOfficial Portal: picme3.tn.gov.in \n\nMaintained by: Directorate of Public Health and Preventive Medicine. Developed by: National Informatics Centre (NIC).',
+      text1: 'This app is a public-interest guide maintained for education.',
+      text2: 'Maintained by: Directorate of Public Health and Preventive Medicine. Developed by: National Informatics Centre (NIC).',
+      officialUrl: 'picme3.tn.gov.in',
+      officialLabel: 'Official Portal: ',
       home: 'Finish Guide'
     }
   },
@@ -83,7 +87,8 @@ export const TRANSLATIONS = {
         'ஸ்கேன் மற்றும் தடுப்பூசி ரிப்போர்ட்டுகள்'
       ],
       tips: '💡 பயன்கள்: கிராமச் சுகாதார செவிலியர் (VHN) உங்களைக் கண்காணிப்பார். ஸ்கேன் மற்றும் தடுப்பூசி தேதிகள் SMS மூலம் உங்களுக்குத் தெரிவிக்கப்படும்.',
-      contactNote: 'அதிகாரப்பூர்வ தளம்: picme3.tn.gov.in',
+      contactNote: 'அதிகாரப்பூர்வ தளம்: ',
+      officialUrl: 'picme3.tn.gov.in',
       next: 'அடுத்து: பதிவு நடைமுறை'
     },
     hospitalFlow: {
@@ -111,7 +116,10 @@ export const TRANSLATIONS = {
     },
     disclaimer: {
       title: 'பயன்பாட்டு விளக்கம்',
-      content: 'இது பொதுமக்களுக்கான ஒரு வழிகாட்டி மட்டுமே. \n\nஅதிகாரப்பூர்வ தளம்: picme3.tn.gov.in \n\nபராமரிப்பு: பொதுச் சுகாதாரம் மற்றும் நோய் தடுப்பு மருந்து இயக்குநரகம். தொழில்நுட்பம்: தேசிய தகவல் மையம் (NIC).',
+      text1: 'இது பொதுமக்களுக்கான ஒரு வழிகாட்டி மட்டுமே.',
+      text2: 'பராமரிப்பு: பொதுச் சுகாதாரம் மற்றும் நோய் தடுப்பு மருந்து இயக்குநரகம். தொழில்நுட்பம்: தேசிய தகவல் மையம் (NIC).',
+      officialUrl: 'picme3.tn.gov.in',
+      officialLabel: 'அதிகாரப்பூர்வ தளம்: ',
       home: 'முடிக்கவும்'
     }
   }
