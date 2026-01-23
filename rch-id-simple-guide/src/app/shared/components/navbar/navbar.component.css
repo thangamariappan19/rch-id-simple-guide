@@ -1,0 +1,112 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 0.5px solid var(--color-border);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-content {
+    width: 100%;
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    background: rgba(0, 122, 255, 0.05);
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 99px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 122, 255, 0.1);
+}
+
+.nav-btn:active {
+    transform: scale(0.96);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    max-width: 180px;
+    /* Limit banner width in navbar */
+    height: 40px;
+    cursor: pointer;
+}
+
+.nav-banner-img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn-text {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .btn-text {
+        display: block;
+    }
+
+    .nav-logo {
+        max-width: 240px;
+    }
+}
+
+/* Landing Page UI */
+.landing-top-bar {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 1000;
+    width: auto;
+}
+
+.lang-pill {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--color-border);
+    padding: 10px 20px;
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-text);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lang-pill:active {
+    transform: scale(0.96);
+}
+
+@media (min-width: 1024px) {
+    .landing-top-bar {
+        right: calc(50% - (var(--max-content-width) / 2) + 24px);
+    }
+}

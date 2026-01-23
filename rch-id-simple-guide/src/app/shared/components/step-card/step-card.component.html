@@ -1,7 +1,7 @@
 <div class="step-card">
-    <div class="step-badge" *ngIf="stepNumber > 0">{{ stepNumber }}</div>
-    <div class="step-content">
+    <div class="step-header">
+        <div class="step-badge">{{ stepNumber }}</div>
         <h3 class="step-title">{{ title }}</h3>
-        <p class="step-desc">{{ description }}</p>
     </div>
+    <p class="step-desc">{{ description }}</p>
 </div>

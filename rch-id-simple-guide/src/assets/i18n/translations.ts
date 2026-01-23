@@ -1,5 +1,9 @@
 export const TRANSLATIONS = {
   en: {
+    common: {
+      back: 'Back',
+      home: 'Home'
+    },
     landing: {
       title: 'Stress-free RCH ID Guide',
       subtitle: 'Real-world guide to the Government Hospital process for PICME / RCH ID.',
@@ -52,6 +56,10 @@ export const TRANSLATIONS = {
     }
   },
   ta: {
+    common: {
+      back: 'பின்செல்',
+      home: 'முகப்பு'
+    },
     landing: {
       title: 'RCH ID எளிய வழிகாட்டி',
       subtitle: 'அரசு மருத்துவமனை மற்றும் PICME நடைமுறைகளை எளிதாக அறிந்துகொள்ளுங்கள்.',
@@ -80,7 +88,7 @@ export const TRANSLATIONS = {
         { title: 'படி 1: காலை வருகை', description: 'காலையிலேயே மருத்துவமனைக்குச் செல்லவும். நுழைவில் "மஞ்சள் புத்தகம்" (Yellow Book) தருவார்கள்.' },
         { title: 'படி 2: பரிசோதனை & காத்திருப்பு', description: 'இரத்த பரிசோதனை செய்வார்கள். கூட்டம் இருந்தால் 4-5 மணி நேரம் ஆகலாம்.' },
         { title: 'படி 3: வங்கி & அட்டை', description: 'மருத்துவர் அல்லது பொறுப்பாளர் உங்களை இந்தியா போஸ்ட் வங்கி கணக்கு மற்றும் E-Shram அட்டை எடுக்கச் சொல்வார்கள்.' },
-        { title: 'படி 4: சமர்ப்பித்தல்', description: 'ஆதார், IPPB கார்டு, E-Shram நகல்கள் மற்றும் ரிப்போர்ட்களை கொடுக்கவும்.' },
+        { title: 'படி 4: சமர்ப்பித்தல்', description: 'ஆதார், IPPB கார்டு, E-Shram நகல்கள் மற்றும் ரிப்போர்ட்டுகளை கொடுக்கவும்.' },
         { title: 'படி 5: RCH ID உருவாக்கம்', description: 'எல்லாவற்றையும் சரிபார்த்து, உங்கள் விவரங்களை ஏற்றுவர். RCH ID உருவாக்கப்படும்.' },
         { title: 'படி 6: அடுத்த வரவு', description: 'மேலதிக பரிசோதனைக்கு வெள்ளிக்கிழமை போன்ற குறிப்பிட்ட நாளில் வரச் சொல்வார்கள்.' }
       ],

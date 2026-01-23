@@ -1,92 +1,54 @@
 .primary-btn {
-    /* Material Design 3 / iOS 17 inspired button */
+    /* Ultra-Stable iOS Native Button Style */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 56px;
-    padding: 16px 32px;
+    min-height: 52px;
+    padding: 12px 24px;
 
-    /* Modern gradient background */
-    background: linear-gradient(135deg, #2E7D32 0%, #388E3C 100%);
+    /* Apple Blue */
+    background: var(--color-accent);
 
     /* Text styling */
     color: #FFFFFF !important;
     font-size: 17px;
     font-weight: 600;
-    letter-spacing: 0.2px;
+    letter-spacing: -0.022em;
     text-decoration: none;
     text-align: center;
-    line-height: 1.4;
 
-    /* Modern rounded corners */
-    border-radius: 14px;
+    /* Precision rounded corners */
+    border-radius: 12px;
     border: none;
 
-    /* Elevated shadow - Material Design 3 */
-    box-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 4px 8px rgba(46, 125, 50, 0.2);
-
-    /* Smooth transitions */
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Snappy transitions */
+    transition: background-color 0.15s ease, opacity 0.15s ease;
 
     cursor: pointer;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     box-sizing: border-box;
 
-    /* Ensure text is visible */
-    position: relative;
-    overflow: hidden;
+    /* Fix for sub-pixel rendering shifts */
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Hover state - Desktop */
+/* 
+   Apple Native "Pressed" Style: 
+   Avoid transform: scale to prevent layout "pixel-jumping".
+   Instead, use a subtle opacity drop and color shift.
+*/
+.primary-btn:active {
+    opacity: 0.7;
+    background-color: #0062CC;
+    /* Darker blue */
+}
+
 @media (hover: hover) {
     .primary-btn:hover {
-        transform: translateY(-2px);
-        box-shadow:
-            0 4px 8px rgba(0, 0, 0, 0.15),
-            0 8px 16px rgba(46, 125, 50, 0.25);
-        background: linear-gradient(135deg, #388E3C 0%, #43A047 100%);
-    }
-}
-
-/* Active/Pressed state */
-.primary-btn:active {
-    transform: scale(0.98);
-    box-shadow:
-        0 1px 2px rgba(0, 0, 0, 0.1),
-        0 2px 4px rgba(46, 125, 50, 0.15);
-}
-
-/* Focus state for accessibility */
-.primary-btn:focus-visible {
-    outline: 3px solid rgba(46, 125, 50, 0.4);
-    outline-offset: 2px;
-}
-
-/* Disabled state */
-.primary-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    transform: none;
-}
-
-/* Responsive sizing */
-@media (min-width: 768px) {
-    .primary-btn {
-        max-width: 400px;
-        margin: 0 auto;
-        font-size: 18px;
-        min-height: 52px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .primary-btn {
-        max-width: 450px;
-        font-size: 18px;
-        min-height: 50px;
+        background-color: #0071E3;
+        opacity: 0.95;
     }
 }
