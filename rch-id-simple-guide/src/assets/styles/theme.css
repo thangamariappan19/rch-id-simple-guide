@@ -165,7 +165,7 @@ button {
   box-sizing: border-box;
 }
 
-.official-link {
+.reference-link {
   color: var(--color-primary);
   text-decoration: none;
   font-weight: 600;
@@ -173,7 +173,7 @@ button {
   display: inline-block;
 }
 
-.official-link::after {
+.reference-link::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -186,7 +186,7 @@ button {
   transition: transform 0.3s ease-out;
 }
 
-.official-link:hover::after {
+.reference-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

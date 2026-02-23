@@ -3,16 +3,16 @@ export const TRANSLATIONS = {
     common: {
       back: 'Back',
       home: 'Home',
-      officialLink: 'Official Portal'
+      govtLink: 'Government Portal'
     },
     landing: {
-      title: 'Official RCH ID & PICME Guide',
-      subtitle: 'Step-by-step guide to the Tamil Nadu Government Healthcare system (2025-26 Edition).',
+      title: 'The RCH ID & PICME Guide',
+      subtitle: 'Comprehensive guide to the Tamil Nadu Healthcare system (2025-26 Edition).',
       button: 'Enter Guide'
     },
     rchInfo: {
       title: 'What is PICME & RCH ID?',
-      content: 'PICME (Pregnancy and Infant Cohort Monitoring and Evaluation) is the official portal for tracking maternal and child health. \n\nOnce registered, you receive a unique 12-digit RCH ID. \n\nRegistration is MANDATORY in Tamil Nadu to get a Birth Certificate and to receive maternity financial aid.',
+      content: 'PICME (Pregnancy and Infant Cohort Monitoring and Evaluation) is the government portal for tracking maternal and child health. \n\nOnce registered, you receive a unique 12-digit RCH ID. \n\nRegistration is MANDATORY in Tamil Nadu to get a Birth Certificate and to receive maternity financial aid.',
       next: 'Next: Preparation'
     },
     preparation: {
@@ -25,8 +25,8 @@ export const TRANSLATIONS = {
         'Latest Scan & Vaccination Reports'
       ],
       tips: '💡 Benefits: Registered women are monitored by a Village Health Nurse (VHN) and receive SMS alerts for scan dates and vaccinations.',
-      contactNote: 'Official Site: ',
-      officialUrl: 'picme3.tn.gov.in',
+      contactNote: 'Reference Site: ',
+      portalUrl: 'picme3.tn.gov.in',
       next: 'Next: Registration Process'
     },
     hospitalFlow: {
@@ -43,7 +43,7 @@ export const TRANSLATIONS = {
       next: 'Next: FAQ'
     },
     faq: {
-      title: 'Official FAQ (2025)',
+      title: 'General FAQ (2025)',
       items: [
         { question: 'Is PICME mandatory for Birth Certificate?', answer: 'YES. You cannot obtain a birth certificate in Tamil Nadu without a valid RCH ID.' },
         { question: 'How is financial aid provided?', answer: 'Financial assistance is provided through the Dr. Muthulakshmi Reddy Maternity Benefit Scheme.' },
@@ -54,10 +54,10 @@ export const TRANSLATIONS = {
     },
     disclaimer: {
       title: 'Guide Disclaimer',
-      text1: 'This app is a public-interest guide maintained for education.',
+      text1: 'This app is a public-interest guide maintained for educational purpose.',
       text2: 'Maintained by: Directorate of Public Health and Preventive Medicine. Developed by: National Informatics Centre (NIC).',
-      officialUrl: 'picme3.tn.gov.in',
-      officialLabel: 'Official Portal: ',
+      portalUrl: 'picme3.tn.gov.in',
+      portalLabel: 'Government Portal: ',
       home: 'Finish Guide'
     }
   },
@@ -65,10 +65,10 @@ export const TRANSLATIONS = {
     common: {
       back: 'பின்செல்',
       home: 'முகப்பு',
-      officialLink: 'அதிகாரப்பூர்வ தளம்'
+      govtLink: 'அரசு தளம்'
     },
     landing: {
-      title: 'RCH ID & PICME அதிகாரப்பூர்வ வழிகாட்டி',
+      title: 'RCH ID & PICME வழிகாட்டி',
       subtitle: 'தமிழக அரசின் சுகாதாரத் துறை நடைமுறைகள் (2025-26 பதிப்பு).',
       button: 'வழிகாட்டியில் நுழையவும்'
     },
@@ -87,8 +87,8 @@ export const TRANSLATIONS = {
         'ஸ்கேன் மற்றும் தடுப்பூசி ரிப்போர்ட்டுகள்'
       ],
       tips: '💡 பயன்கள்: கிராமச் சுகாதார செவிலியர் (VHN) உங்களைக் கண்காணிப்பார். ஸ்கேன் மற்றும் தடுப்பூசி தேதிகள் SMS மூலம் உங்களுக்குத் தெரிவிக்கப்படும்.',
-      contactNote: 'அதிகாரப்பூர்வ தளம்: ',
-      officialUrl: 'picme3.tn.gov.in',
+      contactNote: 'குறிப்பு தளம்: ',
+      portalUrl: 'picme3.tn.gov.in',
       next: 'அடுத்து: பதிவு நடைமுறை'
     },
     hospitalFlow: {
@@ -97,7 +97,7 @@ export const TRANSLATIONS = {
         { title: 'படி 1: காலை வருகை', description: 'காலை நேரத்திலேயே அரசு மருத்துவமனை அல்லது PHC-க்குச் செல்லவும். "மஞ்சள் புத்தகம்" பெறவும்.' },
         { title: 'படி 2: பரிசோதனை', description: 'உடல் எடை, இரத்த அழுத்தம் மற்றும் இரத்தப் பரிசோதனைகள் செய்யப்படும்.' },
         { title: 'படி 3: சரிபார்ப்பு', description: 'உங்கள் ஆதார் மற்றும் வங்கிக் கணக்கு விவரங்களைச் சுகாதாரச் செவிலியர் சரிபார்ப்பார்.' },
-        { title: 'படி 4: தரவுப் பதிவு', description: 'உங்கள் விவரங்கள் PICME 3.0 அதிகாரப்பூர்வத் தளத்தில் பதிவேற்றப்படும்.' },
+        { title: 'படி 4: தரவுப் பதிவு', description: 'உங்கள் விவரங்கள் PICME 3.0 தளத்தில் பதிவேற்றப்படும்.' },
         { title: 'படி 5: ID பெறுதல்', description: '12-இலக்க RCH ID உருவாக்கப்படும். பிறப்புச் சான்றிதழ் பெற இதைப் பத்திரமாக வைத்திருக்கவும்.' },
         { title: 'படி 6: மேலாய்வு', description: 'தொடர் சிகிச்சைகள் தொடரும். அரசு நிதியுதவி மகப்பேறு நலத் திட்டத்தின் கீழ் பல்வேறு நிலைகளில் உங்கள் கணக்கில் செலுத்தப்படும்.' }
       ],
@@ -118,9 +118,10 @@ export const TRANSLATIONS = {
       title: 'பயன்பாட்டு விளக்கம்',
       text1: 'இது பொதுமக்களுக்கான ஒரு வழிகாட்டி மட்டுமே.',
       text2: 'பராமரிப்பு: பொதுச் சுகாதாரம் மற்றும் நோய் தடுப்பு மருந்து இயக்குநரகம். தொழில்நுட்பம்: தேசிய தகவல் மையம் (NIC).',
-      officialUrl: 'picme3.tn.gov.in',
-      officialLabel: 'அதிகாரப்பூர்வ தளம்: ',
+      portalUrl: 'picme3.tn.gov.in',
+      portalLabel: 'அரசு தளம்: ',
       home: 'முடிக்கவும்'
     }
   }
 };
+
