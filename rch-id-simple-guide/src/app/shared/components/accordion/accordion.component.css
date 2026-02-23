@@ -1,20 +1,26 @@
 .accordion {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: var(--spacing-md);
 }
 
 .accordion-item {
     background: var(--color-surface-solid);
-    border-radius: 14px;
+    border-radius: var(--border-radius);
     overflow: hidden;
     border: 1px solid var(--color-border);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: var(--shadow-sm);
+}
+
+.accordion-item:hover {
+    box-shadow: var(--shadow-md);
+    border-color: hsla(var(--h-primary), 100%, 50%, 0.1);
 }
 
 .accordion-header {
     width: 100%;
-    padding: 16px 20px;
+    padding: var(--spacing-md) var(--spacing-lg);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,32 +28,38 @@
     border: none;
     cursor: pointer;
     text-align: left;
+    transition: background-color 0.2s ease;
 }
 
-.accordion-header:active {
-    background-color: #F2F2F7;
+.accordion-header:hover {
+    background-color: var(--color-primary-soft);
 }
 
 .question {
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: 700;
+    font-size: 1.125rem;
     color: var(--color-text);
-    letter-spacing: -0.022em;
+    letter-spacing: -0.01em;
 }
 
 .icon {
     color: var(--color-text-secondary);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    background: var(--color-background);
+    padding: 6px;
+    border-radius: 50%;
 }
 
 .accordion-header.expanded .icon {
     transform: rotate(180deg);
+    background: var(--color-primary);
+    color: white;
 }
 
 .accordion-content {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: grid-template-rows 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .accordion-content.open {
@@ -59,9 +71,9 @@
 }
 
 .content-inner p {
-    padding: 0 20px 20px 20px;
+    padding: 0 var(--spacing-lg) var(--spacing-lg) var(--spacing-lg);
     margin: 0;
     color: var(--color-text-secondary);
-    line-height: 1.5;
-    font-size: 16px;
+    line-height: 1.6;
+    font-size: 1rem;
 }

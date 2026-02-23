@@ -1,52 +1,70 @@
 .step-card {
     background: var(--color-surface-solid);
-    border-radius: 20px;
-    padding: 24px;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: var(--spacing-md);
     border: 1px solid var(--color-border);
-    box-shadow: var(--box-shadow);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-md);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     height: 100%;
-    /* Important for equal height in grid */
+    position: relative;
+    overflow: hidden;
 }
 
 .step-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--box-shadow-hover);
-    border-color: var(--color-accent);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: hsla(var(--h-primary), 100%, 50%, 0.2);
+}
+
+.step-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, var(--color-primary), var(--color-accent));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.step-card:hover::after {
+    opacity: 1;
 }
 
 .step-header {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: var(--spacing-md);
 }
 
 .step-badge {
     flex-shrink: 0;
-    width: 28px;
-    height: 28px;
-    background-color: var(--color-accent);
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
     color: #fff;
-    font-weight: 700;
-    border-radius: 50%;
+    font-weight: 800;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 1.125rem;
+    box-shadow: 0 4px 12px -4px hsla(var(--h-primary), 100%, 50%, 0.4);
 }
 
 .step-title {
-    font-size: 17px;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--color-text);
-    letter-spacing: -0.022em;
+    letter-spacing: -0.02em;
 }
 
 .step-desc {
-    font-size: 15px;
+    font-size: 1rem;
     color: var(--color-text-secondary);
-    line-height: 1.4;
+    line-height: 1.6;
 }
