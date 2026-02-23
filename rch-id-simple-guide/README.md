@@ -193,6 +193,10 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 - **Issues**: [GitHub Issues](https://github.com/your-username/rch-id-simple-guide/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/your-username/rch-id-simple-guide/discussions)
+- Contact
+📧 Email: thangamariappancse@gmail.com
+🔗 LinkedIn: [thanga-mariappan-pandian](https://www.linkedin.com/in/thangamariappanpandian/)
+🐙 GitHub: [thangamariappan19](https://github.com/thangamariappan19)
 
 ---
 
