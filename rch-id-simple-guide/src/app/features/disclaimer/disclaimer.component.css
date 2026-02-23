@@ -2,12 +2,11 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: hsl(0, 100%, 99%);
 }
 
 .scroll-content {
     flex: 1;
-    padding: var(--spacing-xxl) var(--spacing-lg) 180px;
+    padding: var(--spacing-xxl) var(--spacing-lg) 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,39 +19,55 @@
 .alert-icon {
     margin-bottom: var(--spacing-lg);
     color: var(--color-error);
-    filter: drop-shadow(0 8px 16px hsla(0, 85%, 60%, 0.2));
+    filter: drop-shadow(0 15px 30px hsla(0, 85%, 60%, 0.3));
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 .page-title {
-    font-size: clamp(2.5rem, 8vw, 4rem);
-    font-weight: 800;
+    font-size: clamp(3rem, 10vw, 5rem);
+    font-weight: 900;
     color: var(--color-error);
     margin-bottom: var(--spacing-lg);
-    letter-spacing: -0.04em;
-    line-height: 1.1;
+    letter-spacing: -0.05em;
+    line-height: 0.95;
     text-align: center;
 }
 
 .disclaimer-text {
-    font-size: clamp(1.125rem, 2.2vw, 1.375rem);
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
     line-height: 1.6;
     color: var(--color-text);
     white-space: pre-line;
-    max-width: 800px;
-    background: var(--color-surface-solid);
-    padding: clamp(var(--spacing-lg), 5vw, var(--spacing-xl));
+    max-width: 900px;
+    background: var(--color-surface);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    padding: clamp(var(--spacing-lg), 8vw, var(--spacing-xxl));
     border-radius: var(--border-radius-lg);
     border: 1px solid hsla(0, 85%, 60%, 0.1);
     box-shadow: var(--shadow-lg);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
     text-align: center;
+    font-weight: 500;
 }
 
 .footer-action {
-    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-xl);
-    background: hsla(0, 100%, 99%, 0.8);
-    backdrop-filter: blur(20px) saturate(160%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    padding: var(--spacing-lg) var(--spacing-lg) calc(var(--spacing-xl) + 20px);
+    background: hsla(0, 100%, 99%, 0.5);
+    backdrop-filter: blur(30px) saturate(200%);
+    -webkit-backdrop-filter: blur(30px) saturate(200%);
     border-top: 1px solid hsla(0, 85%, 60%, 0.1);
     position: fixed;
     bottom: 0;
@@ -65,5 +80,5 @@
 
 .footer-inner {
     width: 100%;
-    max-width: 440px;
+    max-width: 480px;
 }

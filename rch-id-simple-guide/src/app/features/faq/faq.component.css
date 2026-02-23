@@ -6,33 +6,37 @@
 
 .scroll-content {
     flex: 1;
-    padding: var(--spacing-xl) var(--spacing-lg) 180px;
+    padding: var(--spacing-xxl) var(--spacing-lg) 200px;
     max-width: var(--max-content-width);
     margin: 0 auto;
     width: 100%;
 }
 
 .page-title {
-    font-size: clamp(2.5rem, 8vw, 3.5rem);
-    font-weight: 800;
+    font-size: clamp(3rem, 10vw, 5rem);
+    font-weight: 900;
     color: var(--color-text);
     margin-bottom: var(--spacing-xl);
-    letter-spacing: -0.04em;
-    line-height: 1.1;
+    letter-spacing: -0.05em;
+    line-height: 0.95;
     text-align: center;
+    background: linear-gradient(135deg, var(--color-text) 60%, var(--color-primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .faq-wrapper {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .footer-action {
-    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-xl);
-    background: hsla(220, 30%, 98%, 0.8);
-    backdrop-filter: blur(20px) saturate(160%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%);
-    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-lg) var(--spacing-lg) calc(var(--spacing-xl) + 20px);
+    background: hsla(230, 50%, 98%, 0.5);
+    backdrop-filter: blur(30px) saturate(200%);
+    -webkit-backdrop-filter: blur(30px) saturate(200%);
+    border-top: 1px solid hsla(230, 20%, 10%, 0.05);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -44,5 +48,5 @@
 
 .footer-inner {
     width: 100%;
-    max-width: 440px;
+    max-width: 480px;
 }

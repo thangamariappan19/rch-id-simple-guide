@@ -2,15 +2,15 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: var(--glass-bg);
+    background: var(--color-surface);
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     border-bottom: 1px solid var(--color-border);
-    height: 72px;
+    height: 80px;
     display: flex;
     align-items: center;
     width: 100%;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .nav-content {
@@ -24,24 +24,38 @@
 }
 
 .nav-btn {
-    background: var(--color-primary-soft);
+    background: var(--color-surface-solid);
     border: 1px solid var(--color-border);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 12px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-btn svg {
     color: var(--color-primary);
-    font-weight: 600;
-    font-size: 0.9375rem;
-    padding: 10px 16px;
-    border-radius: var(--border-radius-sm);
-    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .nav-btn:hover {
     background: white;
-    box-shadow: var(--shadow-sm);
-    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: var(--color-primary-glow);
+}
+
+.nav-btn:hover svg {
+    transform: translateX(-2px);
+}
+
+.nav-btn.home-btn:hover svg {
+    transform: scale(1.1);
 }
 
 .nav-btn:active {
@@ -51,25 +65,24 @@
 .nav-logo {
     display: flex;
     align-items: center;
-    max-width: 200px;
-    height: 44px;
-    cursor: pointer;
+    height: 48px;
+    padding: 6px 16px;
     background: white;
-    padding: 4px 12px;
-    border-radius: var(--border-radius-sm);
+    border-radius: var(--border-radius);
     border: 1px solid var(--color-border);
     box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .nav-logo:hover {
     box-shadow: var(--shadow-md);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    border-color: var(--color-primary-glow);
 }
 
 .nav-banner-img {
-    max-width: 100%;
     height: 100%;
+    width: auto;
     object-fit: contain;
 }
 
@@ -77,56 +90,75 @@
     display: none;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     .btn-text {
         display: block;
     }
+}
 
-    .nav-logo {
-        max-width: 280px;
+/* 2026 Floating Language Toggle */
+.landing-top-bar {
+    position: fixed;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    z-index: 1100;
+    width: auto;
+    animation: barSlideDown 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes barSlideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
-/* Landing Page UI */
-.landing-top-bar {
-    position: absolute;
-    top: var(--spacing-lg);
-    right: var(--spacing-lg);
-    z-index: 1000;
-    width: auto;
-}
-
 .lang-pill {
-    background: var(--glass-bg);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
+    background: var(--color-surface-solid);
     border: 1px solid var(--color-border);
-    padding: 12px 24px;
+    padding: 14px 28px;
     border-radius: var(--border-radius-xl);
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-weight: 700;
-    font-size: 0.875rem;
+    gap: 12px;
+    font-weight: 800;
+    font-size: 0.9375rem;
     color: var(--color-text);
-    box-shadow: var(--shadow-md);
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: var(--shadow-lg);
     border: 1px solid var(--color-border-bright);
 }
 
+.lang-pill svg {
+    color: var(--color-primary);
+}
+
 .lang-pill:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.15);
     background: white;
+    border-color: var(--color-primary-glow);
 }
 
 .lang-pill:active {
     transform: translateY(0) scale(0.96);
 }
 
-@media (min-width: 1024px) {
-    .landing-top-bar {
-        right: calc(50% - (var(--max-content-width) / 2) + var(--spacing-lg));
+@media (max-width: 640px) {
+    .navbar {
+        height: 72px;
+    }
+
+    .nav-btn {
+        padding: 10px;
+    }
+
+    .lang-pill {
+        padding: 12px 20px;
+        font-size: 0.875rem;
     }
 }

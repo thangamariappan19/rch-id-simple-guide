@@ -3,30 +3,31 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 58px;
+    min-height: 64px;
     padding: var(--spacing-md) var(--spacing-xl);
 
     background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-    box-shadow: 0 8px 20px -6px hsla(var(--h-primary), 100%, 50%, 0.3);
+    box-shadow: var(--shadow-primary);
 
     color: #FFFFFF !important;
     font-size: 1.125rem;
-    font-weight: 600;
-    letter-spacing: -0.01em;
+    font-weight: 800;
+    letter-spacing: 0.02em;
     text-decoration: none;
+    text-transform: uppercase;
     text-align: center;
 
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-xl);
     border: none;
     position: relative;
     overflow: hidden;
 
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     box-sizing: border-box;
-    backface-visibility: hidden;
+    z-index: 1;
 }
 
 .primary-btn::before {
@@ -36,30 +37,31 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
 }
 
 .primary-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px -8px hsla(var(--h-primary), 100%, 50%, 0.4);
-    filter: brightness(1.1);
+    transform: scale(1.02) translateY(-4px);
+    box-shadow: 0 20px 40px -10px hsla(var(--h-primary), 100%, 50%, 0.4);
+    filter: saturate(1.2) brightness(1.1);
 }
 
 .primary-btn:hover::before {
-    opacity: 1;
+    transform: translateX(100%);
 }
 
 .primary-btn:active {
-    transform: translateY(0) scale(0.98);
-    box-shadow: 0 4px 12px -4px hsla(var(--h-primary), 100%, 50%, 0.3);
+    transform: scale(0.96) translateY(0);
+    box-shadow: var(--shadow-primary);
     filter: brightness(0.9);
 }
 
 @media (max-width: 480px) {
     .primary-btn {
-        min-height: 54px;
+        min-height: 60px;
         font-size: 1rem;
+        padding: var(--spacing-md) var(--spacing-lg);
     }
 }

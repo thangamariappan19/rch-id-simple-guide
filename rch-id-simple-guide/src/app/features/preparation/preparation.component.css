@@ -6,26 +6,32 @@
 
 .scroll-content {
     flex: 1;
-    padding: var(--spacing-xl) var(--spacing-lg) 180px;
+    padding: var(--spacing-xxl) var(--spacing-lg) 200px;
     max-width: var(--max-content-width);
     margin: 0 auto;
     width: 100%;
 }
 
 .page-title {
-    font-size: clamp(2.5rem, 8vw, 3.5rem);
-    font-weight: 800;
+    font-size: clamp(3rem, 10vw, 5rem);
+    font-weight: 900;
     color: var(--color-text);
-    margin-bottom: var(--spacing-lg);
-    letter-spacing: -0.04em;
-    line-height: 1.1;
+    margin-bottom: var(--spacing-xl);
+    letter-spacing: -0.05em;
+    line-height: 0.95;
+    background: linear-gradient(135deg, var(--color-text) 60%, var(--color-primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .card {
-    background: var(--color-surface-solid);
-    padding: clamp(var(--spacing-lg), 5vw, var(--spacing-xl));
+    background: var(--color-surface);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    padding: var(--spacing-lg);
     border-radius: var(--border-radius-lg);
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-border-bright);
     box-shadow: var(--shadow-md);
     margin-bottom: var(--spacing-lg);
 }
@@ -33,46 +39,48 @@
 .checklist-card {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
 }
 
 @media (min-width: 768px) {
     .checklist-card {
         grid-template-columns: 1fr 1fr;
-        column-gap: var(--spacing-lg);
+        column-gap: var(--spacing-xl);
     }
 }
 
 .tip-card {
-    background: hsla(35, 100%, 55%, 0.08);
-    color: hsl(35, 100%, 35%);
+    background: hsla(40, 100%, 55%, 0.1);
+    color: hsla(40, 100%, 25%, 1);
     padding: var(--spacing-lg);
-    border-radius: var(--border-radius);
-    font-size: 1.0625rem;
+    border-radius: var(--border-radius-lg);
+    font-size: 1.125rem;
     line-height: 1.6;
     margin-bottom: var(--spacing-lg);
-    border-left: 6px solid var(--color-warning);
-    font-weight: 500;
+    border: 1px solid hsla(40, 100%, 55%, 0.2);
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
 }
 
 .contact-note {
-    background: var(--color-primary-soft);
+    background: var(--color-primary-glow);
     color: var(--color-primary);
     padding: var(--spacing-lg);
-    border-radius: var(--border-radius);
-    font-size: 1rem;
+    border-radius: var(--border-radius-lg);
+    font-size: 1.125rem;
     line-height: 1.6;
     margin-bottom: var(--spacing-lg);
-    border-left: 6px solid var(--color-primary);
-    font-weight: 500;
+    border: 1px solid hsla(var(--h-primary), 100%, 50%, 0.1);
+    font-weight: 700;
+    box-shadow: var(--shadow-sm);
 }
 
 .footer-action {
-    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-xl);
-    background: hsla(220, 30%, 98%, 0.8);
-    backdrop-filter: blur(20px) saturate(160%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%);
-    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-lg) var(--spacing-lg) calc(var(--spacing-xl) + 20px);
+    background: hsla(230, 50%, 98%, 0.5);
+    backdrop-filter: blur(30px) saturate(200%);
+    -webkit-backdrop-filter: blur(30px) saturate(200%);
+    border-top: 1px solid hsla(230, 20%, 10%, 0.05);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -84,5 +92,5 @@
 
 .footer-inner {
     width: 100%;
-    max-width: 440px;
+    max-width: 480px;
 }
